@@ -52,9 +52,9 @@ class BasicCmd(FlagMode):
                 print(self.rfile_class.get_file_path())
             if args[0] == "--check" or args[0] == "-c":
                 print(self.rfile_class.check_type_file())
-            if args[0] == "--read-data" or args[0] == "-rd":
+            if args[0] == "--read-csv-data" or args[0] == "-rcd":
                 self.rfile_class.read_csv()
-            if args[0] == "--show-data" or args[0] == "-sd":
+            if args[0] == "--show-csv-data" or args[0] == "-scd":
                 print(self.rfile_class.show_data())
         else:
             print("argv error !")
