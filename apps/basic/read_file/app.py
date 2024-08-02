@@ -9,7 +9,10 @@ class ReadFile:
         self.version = "v0.1"
 
     def read_csv(self):
-        pass
+        if self.check_type_file() == "text/csv":
+            self.data = pd.read_csv(self.path)
+        else :
+            print("[!] file mime error [*.csv]")
 
     def check_type_file(self):
         try:
@@ -21,7 +24,7 @@ class ReadFile:
                 else:
                     return "[!] Error Type ..."
         except:
-            print("[!] not define")
+            print("[!] file not define")
             
     def set_file_path(self,path):
         if UtilsHelper.file_exists(path):
@@ -31,4 +34,10 @@ class ReadFile:
         try:
             return self.path
         except:
-            print("[!] not define")
+            print("[!] path not define")
+
+    def show_data(self):
+        try:
+            return self.data
+        except:
+            print("[!] data not define")
