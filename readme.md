@@ -101,6 +101,18 @@ This software is designed for easy file management, analysis, and visualization.
             <td>[-c , --check]</td>
             <td>check mimetypes</td>
         </tr>
+        <tr>
+            <td>4</td>
+            <td>rfile</td>
+            <td>[-rcd , --read-csv-file]</td>
+            <td>read csv file</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>rfile</td>
+            <td>[-scd , --show-csv-data]</td>
+            <td>show csv data</td>
+        </tr>
     </tbody>
 </table>
 </center>
