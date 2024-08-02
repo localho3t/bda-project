@@ -2,9 +2,11 @@
 from commands.basic_cmd import BasicCmd
 
 class RenderCmd:
+
+
+    bcmd = BasicCmd()
     def execute_command(self,command):
-        bcmd = BasicCmd()
-        commands = bcmd.commands
+        commands = self.bcmd.commands()
 
         parts = command.split()
         cmd = parts[0]
@@ -16,3 +18,6 @@ class RenderCmd:
                 print(f"Command '{cmd}' takes no arguments")
         else:
             print(f"Unknown command: {cmd}")
+    
+    def get_flag(self):
+        return self.bcmd.get_flag()
