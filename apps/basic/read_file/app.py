@@ -41,3 +41,4 @@ class ReadFile:
             return self.data
         except:
             print("[!] data not define")
+            
